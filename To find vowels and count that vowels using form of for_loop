@@ -1,0 +1,22 @@
+#To find vowels and count that vowels using form of for_loop
+
+import time
+Name=input("Enter the Name: ") #Getting the user name
+vowel_count=0
+for x1 in Name:
+    if x1 in ("aeiouAEIOU"):
+        vowel_count+=1
+        print("The vowels are: ",x1)
+print()
+print("Number of Vowels are: ",vowel_count)
+print()
+non_vowel_count=0
+for x2 in Name:
+    if x2 not in ("aeiouAEIOU"):
+        non_vowel_count+=1
+        print("The none Vowels are: ",x2)
+print()
+print("The number of None vowels are:",non_vowel_count)
+print()
+time.sleep(2)
+print("End of an application")
